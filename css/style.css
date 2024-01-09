@@ -37,7 +37,14 @@
     text-decoration-line: none;
     color: #767676;
     font-size: 12px;
+    font-weight: 400;
 }
 img {
     vertical-align: bottom;
+}
+.weniv-logo-img {
+    width: 64px;
+}
+.icon {
+    width: 16px;
 }
