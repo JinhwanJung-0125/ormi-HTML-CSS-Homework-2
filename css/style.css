@@ -1,5 +1,18 @@
 .h1-display-none, .h2-display-none, .h3-display-none {
     display: none;
+    /*
+        display: none 은 브라우저에서 아에 해당 요소를 없에버리기 때문에
+        스크린 리더 등의 프로그램, 검색 엔진 등이 해당 요소를 인지하지 못한다.
+        때문에 아래와 같은 IR 기법을 주로 쓴다.
+    */
+
+    /*    IR 기법 중 하나
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    */
 }
 .login-section {
     display: flex;
@@ -48,3 +61,8 @@ img {
 .icon {
     width: 16px;
 }
+
+/*
+    향후 요소 추가와 같은 유지 보수를 위해
+    width, height 등과 같은 넓이, 높이 조절 요소는 되도록이면 안쓰는 편이 낫다.
+*/
